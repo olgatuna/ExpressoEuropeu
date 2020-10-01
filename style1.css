@@ -1,0 +1,207 @@
+*{
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-family:'Arial';
+	}
+	body{
+		background-color: #1b0900;
+	}
+	/*secao q o site todo ta dentro*/
+	#site{
+		margin-left: auto;
+		margin-right: auto;
+	}
+/*carrossel das imagens*/
+.carrossel{
+	padding: 20px;
+	width: 600px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.carrossel img{
+		width: 600px;
+		height: 250px;
+	}
+	/*arrumando a logo no centro,com a borda e o bg diferente*/
+	.logo{
+		margin-left: auto;
+		margin-right: auto;
+		align-items: center;
+		width: 430px;
+		height: 200px;
+		}
+		.alinhar{
+			margin-left: auto;
+			margin-right: auto;
+			align-items: center;
+			width: 400px;
+			height: 200px;
+		}
+		#parceiro{
+			width: 400px;
+			height: 300px;
+		}
+	.logo img{
+		margin-left: auto;
+		margin-right: auto;
+		width: 460px;
+		height: 250px;
+		border: solid 1px #fff;
+	
+		border-radius: 2%;
+		}
+		h1{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			font-family: Arial;
+			border: double 3px #fff;
+			width: 40%;
+		}
+		footer{
+			width: 100%;
+			text-align: center;
+			background-color: #3f1700;
+			font-size: large;
+		}
+/*aqui vem todo o css do menu em PC*/
+.menu{
+	width:100%;
+	height:50px;
+	background-color: #240d01;
+	text-align:center;
+	}
+	
+.menu ul{
+	list-style:none;	
+	position:relative;
+
+	}
+.menu ul li{
+		width:150px;
+display:inline-block;
+
+	}
+
+.menu a{
+	padding:15px;
+	display:block;
+	text-decoration: none;
+	background-color:#240d01;
+	text-align:center;
+	}
+.menu ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+	
+	}
+.menu ul li:hover ul{
+	visibility:visible;
+	}
+	
+.menu a:hover{
+	background-color:#8b3800;
+	}
+
+.menu ul ul li{
+	float:none;
+	border-bottom: solid 1px #ccc;
+	}
+.menu ul ul li a{
+	background-color:#501e03;
+	}
+#bt_menu{
+	display: none;
+	}
+label[for='bt_menu']{
+	padding:5px;
+	background-color:#1b0900;
+	color:#fff;
+	font-family:'Arial';
+	text-align:center;
+	font-size:30px;
+	cursor:pointer;
+	display:none;
+	width:50px;
+	height:50px;
+	}	
+	/*aqui escondemos o nosso menu responsivo, pra não ficar aparecendo sempre*/
+label[for='bt_menu']:hover{
+	background-color:#8b3800;
+	color:#aaa;
+	float: left;
+	}
+/*nessa parte vem o responsivo do site, a parte que vai deixar isso visivel em mobile*/
+@media (max-width: 600px) {
+
+.menu{
+	margin-left:-100%;
+	transition:all .4s;
+	position: absolute;
+	}
+label[for='bt_menu']{
+	display:block;
+	position: absolute;
+	}
+.menu>ul{
+	margin-left:0;
+	}
+.menu{
+	margin-top:5px;
+	}
+.menu ul li{
+	width:100%;
+	float:none;
+	}
+.menu ul ul{
+	position:static;
+	overflow:hidden;
+	max-height:0;
+	transition:all .4s;
+	}
+.menu ul li:hover ul{
+	height:auto;
+	max-height:200px;
+	transition:all .4s;
+	}
+#bt_menu:checked ~ .menu{
+	margin-left:0;
+	}
+
+.logo{
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+width: 430px;
+height: 200px;
+}
+
+.carrossel{
+	padding: 20px;
+	width: 500px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.carrossel img{
+		width: 500px;
+		height: 220px;
+	}
+	footer{
+		width: 100%;
+	}
+	h1{
+		width: 80%;
+	}
+}
+footer img{
+	width: 40px;
+}
+
+
+
+
+	

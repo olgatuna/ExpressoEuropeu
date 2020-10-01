@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+    
+    <script src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery-1.9.1.js" ></script>
+    
+    <script type="text/javascript">
+	$(document).ready(function(e) {
+		$('.btn_modal').click(function(e){
+			e.preventDefault();
+			var url = $(this).attr('href')
+			$('.box-modal-load').load("login.html"+url);
+			$('#modal').fadeIn(500);	
+		});
+		
+		
+		$('#modal, .fechar').click(function(e){
+			if( e.target !== this ) 
+       			return;
+			$('#modal').fadeOut(500);	
+		});
+		
+		
+		
+    });
+</script>
+
+    <title>Página Inicial</title>
+</head>
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="imagens/Logo12Brancofundobranco.png" width="100px" />
+                </div>
+                <div class="redessociais">
+                    <ul>
+                        <li><a href=""><img src="imagens/fbiconteste.png" /></a></li>
+                        <li><a href=""><img src="imagens/tticontestee.png" /></a></li>
+                        <li><a href="carrinho.html"><img src="imagens/carrinho.png" /></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#Acesse" class="btn_modal">Acesse</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobrenos.html">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input type="text" placeholder="Busca" />
+            </div>
+        </div>
+    </main>
+    
+    <div id="modal">
+        <div class="box-modal">
+        	<div class="box-modal-load"></div> 	
+            <div class="fechar">X</div>
+        </div> 
+	</div>
+	
+    <div class="col-100">
+
+        <div class="slider-principal">
+            <div><img src="imagens/cafeorfeu.jpg"></div>
+            <div><img src="imagens/bannercafe.jpg"></div>
+            <div><img src="imagens/bourbonamarelo.jpg"></div>
+            <div><img src="imagens/bannerdiamaes.jpg"></div>
+            <div><img src="imagens/bannervaptvupt.jpg"></div>
+        </div>
+    </div>
+    <div class="col-100">
+        <div class="content texto-destaque">
+            <h1>Nossos <strong>Parceiros</strong></h1>
+            <p>
+                Lorem ipsum lobortis senectus suscipit nec interdum taciti, himenaeos eu lorem felis laoreet consequat,
+                velit congue dolor commodo curabitur metus.
+                donec enim aliquam id curabitur cubilia netus ad habitasse nisl neque torquent, risus tempor faucibus
+                dictumst aenean eget blandit morbi leo dictumst, ultrices eros volutpat purus cubilia volutpat libero
+                scelerisque nisl placerat.
+            </p>
+        </div>
+        
+        <div class="slider-parceiros">
+            <div><img src="imagens/nescafebanner.jpg"></div>
+            <div><img src="imagens/orfeubanner.jpg"></div>
+            <div><img src="imagens/saraivaparceiro.png"></div>
+        </div>
+    </div>
+    <div class="col-100">
+        <footer  class="rodape">Expresso Europeu - 2020
+            Todos os direitos reservados. &copy;
+        </footer>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+      <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7681706.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>
+
+</html>

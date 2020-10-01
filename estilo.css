@@ -1,0 +1,117 @@
+#modal{ background-color: rgba(0, 0, 0, 0.6); position:fixed; top:0; left:0; width:100%; height:100%; display:none; z-index:2;}
+
+.box-modal{ background:#ffffff;position:absolute;top:30%;left:45%;width:40%;height:350px;margin-left:-15%;margin-top:-100px;text-align:center;border-radius:10px;z-index:1;}
+
+.fechar{color:#091B17; cursor:pointer; padding:3px 5px;  position:absolute;  top:2px; right:2px;}
+
+#login label,input,select,option {
+    color:black;
+}
+#cadastro label,input,select,option{
+    color:black;
+}
+
+
+#login h2{
+    color:#091B17;height:100%;text-align:center; margin-top: 5px;border-bottom: solid 1px #ccc;
+}
+
+.link a:link {
+text-decoration: none;color: #4D2519;
+}
+
+.link a:hover {
+ text-decoration: underline;
+}
+
+
+
+#cadastro h2{
+    color:#091B17;height:100%;text-align:center; margin-top: 5px;border-bottom: solid 1px #ccc;
+}
+
+
+
+#login { background: #ffffff;width:100%;height:100%;border-radius:10px; }
+#cadastro { background: #ffffff;width:100%;height:100%;border-radius:10px;}
+#esqueceusenha { background: #ffffff;width:100%;height:100%;border-radius:10px;}
+
+
+
+.form{
+   height:90%;
+    padding: 5px;
+    
+}
+.form p{
+    width: 100%;
+    font-size: 1.5em;
+}
+.field{
+    width: 100%;
+    margin: 5px 0;
+}
+.field label, 
+.field span{
+    color:black;
+    padding-left: 5px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.field select option {
+    padding-left: 5px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #4D2519;
+    outline: none;
+}
+
+.field input[type=text],
+.field input[type=email],
+.field input[type=password]
+{
+    width: 90%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.field select[type=select]{
+    width: 93%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+
+.form button[type=submit]{
+    display: block;
+    background-color: #0D261C;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 130px;
+    margin: 0 auto;
+    margin-top:10px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+}
+
+#acessoalt h3{
+    margin-top:50px;font-size:1.1em;color:#8b3800;
+}
+
+.icon {margin-left:25%;width:50%;align-content:center;margin-top:15px;
+}
